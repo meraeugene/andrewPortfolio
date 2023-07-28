@@ -1,0 +1,84 @@
+:root {
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --background-color: #0a192f;
+  --lightest-navy: #233554;
+  --light-navy: #112240;
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #ccd6f6;
+  --lightest-slate: #a8b2d1;
+  --theme-color: #9d00ff;
+
+  /* text */
+  --tsm: 14px;
+  --tsm1: 14px;
+  --tsm2: 15px;
+  --tbase: 16px;
+  --tlarge: 18px;
+  --tlarge2: 22px;
+  --txlarge: 25px;
+  --tx2large: 32px;
+  --tgiant: clamp(40px, 8vw, 60px);
+  @media screen and (max-width: 480px) {
+    --tx2large: 25px;
+    --tgiant: 40px;
+  }
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --font-calibre: "Calibre, Inter, " San Francisco ", " SF Pro Text
+    ", -apple-system, system-ui, sans-serif";
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #010101;
+  max-width: 100vw;
+  overflow-x: hidden;
+  counter-reset: title;
+  color: #ccd6f6;
+}
+
+main {
+  transition: 0.3s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+}

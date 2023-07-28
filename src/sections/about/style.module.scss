@@ -1,0 +1,189 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+
+  &Grid {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    &Info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      h1 {
+        font-size: clamp(40px, 8vw, 50px);
+        font-weight: 700;
+        margin-bottom: 0.3em;
+        font-family: var(--font-calibre);
+        &::before {
+          content: "02";
+          margin-right: 1.5rem;
+          color: var(--theme-color);
+        }
+      }
+      &Text {
+        color: var(--slate);
+        margin-right: 10%;
+        font-size: var(--tlarge);
+        letter-spacing: 0.06rem;
+        line-height: 1.7rem;
+        margin-bottom: 0.5em;
+        font-weight: 500;
+        font-family: var(--font-mono);
+
+        span {
+          color: var(--theme-color);
+        }
+      }
+      &List {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        list-style-type: none;
+        padding: 0 3rem;
+        &Item {
+          font-family: var(--font-mono);
+          line-height: 1.6rem;
+          font-weight: 500;
+          font-size: var(--tlarge);
+          color: var(--slate);
+          position: relative;
+          &::before {
+            content: "▹";
+            position: absolute;
+            left: -20px;
+            top: 6px;
+            color: var(--theme-color);
+            line-height: 12px;
+          }
+        }
+      }
+    }
+    &Photo {
+      position: relative;
+      width: max-content;
+      height: max-content;
+      &:hover {
+        .overlay {
+          background-color: #9d00ff4d;
+        }
+        .overlayBorder {
+          top: 0.5rem;
+          left: 0.5rem;
+        }
+        img {
+          filter: none;
+        }
+      }
+      .overlay {
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        border-radius: 0.2rem;
+      }
+      .overlayBorder {
+        z-index: -3;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border: 2px solid var(--theme-color);
+        top: 1rem;
+        left: 1rem;
+        border-radius: 0.2rem;
+        transition: 0.3s ease-in-out;
+      }
+      &Container {
+        position: relative;
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        img {
+          z-index: 0;
+          filter: none;
+          transition: 0.3s ease-in-out;
+          border-radius: 0.2rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    margin: 5rem 0;
+    &Grid {
+      &Photo {
+        .overlay {
+          height: 223px;
+          width: 223px;
+        }
+        &Container {
+          height: 223px;
+          width: 223px;
+        }
+      }
+      &Info {
+        &List {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 5rem auto;
+    .title {
+      h2 {
+        &::after {
+          width: 200px;
+        }
+      }
+    }
+    &Grid {
+      &Photo {
+        margin-top: 3rem;
+        .overlay {
+          height: 300px;
+          width: 300px;
+        }
+        &Container {
+          height: 300px;
+          width: 300px;
+        }
+      }
+      &Info {
+        &Text {
+          margin-right: 0;
+        }
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .title {
+      h2 {
+        &::after {
+          width: 100px;
+        }
+      }
+    }
+    &Grid {
+      &Photo {
+        .overlay {
+          height: 223px;
+          width: 223px;
+        }
+        &Container {
+          height: 223px;
+          width: 223px;
+        }
+      }
+    }
+  }
+}
