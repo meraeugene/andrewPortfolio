@@ -3,8 +3,10 @@
   padding: 3em 0;
 
   &Title {
-    font-size: var(--tgiant);
     position: relative;
+    font-size: clamp(40px, 8vw, 50px);
+    font-weight: 700;
+    font-family: var(--font-calibre);
     &::before {
       content: "01";
       margin-right: 1.5rem;

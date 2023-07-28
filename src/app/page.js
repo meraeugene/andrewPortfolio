@@ -1,15 +1,15 @@
 import styles from "./style.module.scss";
 import SocialIcons from "@/components/socialicons";
 import Email from "@/components/email";
-import Hero from "@/sections/hero";
-import Project from "@/sections/projects";
-import About from "@/sections/about";
 import { MaskText } from "@/components/textMaskAnimation";
-import Contact from "@/sections/contact";
+import Hero from "@/pages/hero";
+import Project from "@/pages/projects";
+import About from "@/pages/about";
+import Contact from "@/pages/contact";
 
 export default function Index() {
   return (
-    <div className="app">
+    <>
       <SocialIcons />
       <Email />
       <main className={styles.main}>
@@ -21,6 +21,6 @@ export default function Index() {
         <About id="about" />
         <Contact id="contact" />
       </main>
-    </div>
+    </>
   );
 }

@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { Link as ScrollLink } from "react-scroll";
 import { useRef } from "react";
 
-export default function link({ data, index, closeMenu }) {
+export default function Link({ data, index, closeMenu }) {
   const { title, description, images } = data;
   const outer = useRef(null);
   const inner = useRef(null);
@@ -66,7 +66,7 @@ export default function link({ data, index, closeMenu }) {
             return (
               <div key={index} className={styles.container}>
                 <div className={styles.imageContainer}>
-                  <Image src={`/images/${images[0]}`} fill aalt="image" />
+                  <Image src={`/images/${images[0]}`} fill alt="image" />
                 </div>
                 <p>{description}</p>
                 <div className={styles.imageContainer}>

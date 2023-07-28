@@ -8,9 +8,7 @@ import styles from "./style.module.scss";
 function About() {
   const ref = useRef(null);
   const isInView = useInView(ref);
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
+  useEffect(() => {}, [isInView]);
   return (
     <motion.div
       className={styles.about}
