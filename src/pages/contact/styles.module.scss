@@ -34,9 +34,9 @@
     flex-direction: column;
     width: 100%;
 
-    Input,
-    Textarea,
-    Button {
+    .input,
+    .textarea,
+    .button {
       width: 100%;
       padding: 0.5rem;
       outline: none;
@@ -45,18 +45,27 @@
       font-family: var(--font-mono);
       color: #fff;
     }
+  }
+}
 
-    button {
-      cursor: pointer;
-      padding: 1.5em;
+@media screen and (max-width: 428px) {
+  .contact {
+    align-items: flex-start;
+    .text {
+      font-size: 1rem;
+      letter-spacing: 0;
+      text-align: left;
     }
   }
+}
 
-  .error {
-    text-align: center;
-    margin-top: 1em;
-    font-family: var(--font-calibre);
-    font-weight: 500;
-    font-size: 1rem;
+@media screen and (max-width: 428px) {
+  .contact {
+    .title {
+      font-size: 2rem;
+    }
+    .text {
+      font-size: 0.9rem;
+    }
   }
 }

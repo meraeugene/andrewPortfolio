@@ -43,10 +43,10 @@
       background-color: var(--light-slate);
     }
   }
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1024px) {
     left: 2rem;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 855px) {
     display: none;
   }
 }

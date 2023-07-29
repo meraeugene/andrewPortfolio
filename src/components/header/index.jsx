@@ -10,12 +10,14 @@ export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <div className={styles.header}>
-      <Burger
-        openMenu={() => {
-          setMenuIsOpen(true);
-        }}
-      />
+    <div>
+      {!menuIsOpen && ( // Check if menuIsOpen is false (i.e., burger should be visible)
+        <Burger
+          openMenu={() => {
+            setMenuIsOpen(true);
+          }}
+        />
+      )}
       <AnimatePresence mode="wait">
         {menuIsOpen && (
           <>

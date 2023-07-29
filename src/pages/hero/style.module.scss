@@ -41,9 +41,62 @@
       font-size: var(--tsm1);
     }
   }
-  @media screen and (max-width: 768px) {
-    &-text {
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    gap: 0 !important;
+    &Text {
       width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .hero {
+    &TitleLarge {
+      font-size: 3rem !important;
+    }
+    &TitleSub {
+      font-size: 2.7rem !important;
+    }
+    &Text {
+      font-size: 1rem;
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .hero {
+    align-items: flex-start;
+    &TitleLarge {
+      font-size: 2rem !important;
+    }
+    &TitleSub {
+      font-size: 1.7rem !important;
+    }
+    &Text {
+      font-size: 0.9rem;
+      letter-spacing: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero {
+    align-items: flex-start;
+    &TitleLarge {
+      font-size: 1.8rem !important;
+    }
+    &TitleSub {
+      font-size: 1.5rem !important;
+    }
+    &Text {
+      font-size: 0.9rem;
+      letter-spacing: 0;
+      margin-right: 0 !important;
+      width: 100% !important;
     }
   }
 }

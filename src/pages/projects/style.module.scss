@@ -14,3 +14,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .project {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .project {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project {
+    &Title {
+      font-size: 2rem !important;
+    }
+  }
+}

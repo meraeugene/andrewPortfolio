@@ -21,8 +21,9 @@ function Contact() {
   const [state, setState] = useState(initState);
   const [touched, setTouched] = useState({});
   const toast = useToast();
+  const [loading, setLoading] = useState(false);
 
-  const { values, isLoading, error } = state;
+  const { values } = state;
 
   const onBlur = ({ target }) =>
     setTouched((prev) => ({ ...prev, [target.name]: true }));
@@ -38,21 +39,25 @@ function Contact() {
 
   const onSubmit = async () => {
     try {
+      setLoading(true);
       await sendContactForm(values);
       setTouched({});
       setState(initState);
       toast({
-        title: "Message sent.",
+        title: `Thanks, ${values.name}! Your message has been sent.`,
         status: "success",
         duration: 2000,
         position: "top",
       });
     } catch (error) {
-      setState((prev) => ({
-        ...prev,
-        isLoading: false,
-        error: error.message,
-      }));
+      toast({
+        title: "Message Failed to Send.",
+        status: "error",
+        duration: 2000,
+        position: "top",
+      });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -88,6 +93,9 @@ function Contact() {
             value={values.name}
             onChange={handleChange}
             onBlur={onBlur}
+            className={styles.input}
+            id="name"
+            borderColor="purple.500"
           />
           <FormErrorMessage>Name Required</FormErrorMessage>
         </FormControl>
@@ -102,6 +110,9 @@ function Contact() {
             errorBorderColor="red.500"
             onChange={handleChange}
             onBlur={onBlur}
+            className={styles.input}
+            id="email"
+            borderColor="purple.500"
           />
           <FormErrorMessage>Email Required</FormErrorMessage>
         </FormControl>
@@ -115,6 +126,9 @@ function Contact() {
             value={values.message}
             onChange={handleChange}
             onBlur={onBlur}
+            className={styles.textarea}
+            id="message"
+            borderColor="purple.500"
           ></Textarea>
           <FormErrorMessage>Message Required</FormErrorMessage>
         </FormControl>
@@ -122,20 +136,17 @@ function Contact() {
         <Button
           type="submit"
           variant="outline"
-          isLoading={isLoading}
           isDisabled={!values.name || !values.email || !values.message}
           onClick={onSubmit}
+          color="#fff"
           _hover={false}
+          className={styles.button}
+          isLoading={loading}
+          borderColor="purple.500"
         >
           Submit
         </Button>
       </div>
-
-      {error && (
-        <Text color="red.500" className={styles.error}>
-          {error}
-        </Text>
-      )}
     </motion.div>
   );
 }

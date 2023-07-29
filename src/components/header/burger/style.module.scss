@@ -1,7 +1,7 @@
 .button {
   width: 150px;
-  height: 30px;
-  background-color: black;
+  height: 120px;
+  background-color: #010101;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,7 +12,6 @@
   cursor: pointer;
 
   p {
-    display: none;
     color: white;
     margin: 0px;
     text-transform: uppercase;
@@ -30,7 +29,7 @@
   }
 
   .background {
-    background-color: #9d00ff;
+    background-color: var(--theme-color);
     width: 100%;
     position: absolute;
     left: 0;
@@ -42,11 +41,11 @@
 
   &:hover {
     p {
-      color: #e6f1ff;
+      color: black;
     }
     svg {
       line {
-        stroke: #e6f1ff;
+        stroke: black;
       }
     }
     .background {
@@ -55,11 +54,36 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (max-width: 1024px) {
   .button {
-    height: 120px;
     p {
-      display: block;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .button {
+    p {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .button {
+    background-color: var(--theme-color);
+    height: 40px;
+    padding: 25px;
+    width: 100%;
+    z-index: 10;
+
+    svg {
+      color: white !important;
+    }
+
+    p {
+      display: none;
     }
   }
 }

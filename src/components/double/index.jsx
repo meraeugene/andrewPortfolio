@@ -2,7 +2,7 @@
 
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Link from "next/link";
 
 export default function Double({ projects, reversed }) {
@@ -23,11 +23,11 @@ export default function Double({ projects, reversed }) {
   };
 
   const animate = () => {
-    //Add easing to the animation
+    // Add easing to the animation
     const xPercentDelta = xPercent - currentXPercent;
     currentXPercent = currentXPercent + xPercentDelta * speed;
 
-    //Change width of images between 33.33% and 66.66% based on cursor
+    // Change width of images between 33.33% and 66.66% based on cursor
     const firstImagePercent = 66.66 - currentXPercent * 0.33;
     const secondImagePercent = 33.33 + currentXPercent * 0.33;
     firstImage.current.style.width = `${firstImagePercent}%`;
@@ -39,6 +39,32 @@ export default function Double({ projects, reversed }) {
     } else {
       window.requestAnimationFrame(animate);
     }
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      const isMobile = window.innerWidth <= 855;
+      if (isMobile) {
+        window.removeEventListener("mousemove", manageMouseMove);
+      } else {
+        window.addEventListener("mousemove", manageMouseMove);
+      }
+    }
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("mousemove", manageMouseMove);
+    };
+  }, []);
+
+  const truncateText = (text, maxLength) => {
+    return text.length > maxLength
+      ? text.substring(0, maxLength) + "..."
+      : text;
   };
 
   return (
@@ -78,7 +104,7 @@ export default function Double({ projects, reversed }) {
             rel="noopener noreferrer"
             className={styles.source}
           >
-            {projects[0].source}
+            {truncateText(projects[0].source, 35)}
           </Link>
         </div>
       </div>
@@ -113,7 +139,7 @@ export default function Double({ projects, reversed }) {
             rel="noopener noreferrer"
             className={styles.source}
           >
-            {projects[1].source}
+            {truncateText(projects[1].source, 35)}
           </Link>
         </div>
       </div>

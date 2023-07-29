@@ -36,6 +36,7 @@
   .body {
     font-size: 16px;
     padding: 10px;
+
     h3 {
       font-size: 1.2em;
       margin-bottom: 5px;
@@ -71,4 +72,59 @@
 .source:hover {
   color: var(--theme-color);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .double {
+    height: 25vh;
+    margin-bottom: 60vh !important;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .double {
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em !important;
+    height: 100% !important;
+    gap: 2em;
+
+    .imageContainer {
+      &:nth-of-type(1) {
+        width: 100% !important;
+      }
+      &:nth-of-type(2) {
+        width: 100% !important;
+      }
+    }
+
+    &:nth-child(even) {
+      .imageContainer {
+        &:nth-of-type(1) {
+          width: 100% !important;
+        }
+        &:nth-of-type(2) {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .double {
+    .body {
+      h3 {
+        font-size: 0.9rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .technologies,
+  .source {
+    font-size: 0.8rem;
+  }
 }
