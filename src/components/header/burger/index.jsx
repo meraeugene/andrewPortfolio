@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 
-export default function ({ openMenu }) {
+export default function BurgerMenu({ openMenu }) {
   const [isButtonVisible, setIsButtonVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 

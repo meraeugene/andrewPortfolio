@@ -59,7 +59,7 @@ export default function Double({ projects, reversed }) {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("mousemove", manageMouseMove);
     };
-  }, []);
+  }, [manageMouseMove]);
 
   const truncateText = (text, maxLength) => {
     return text.length > maxLength
