@@ -174,8 +174,8 @@
   .menu {
     .header {
       svg {
-        width: 40px !important;
-        height: 40px !important;
+        width: 30px !important;
+        height: 30px !important;
       }
     }
 
@@ -183,6 +183,14 @@
       p,
       a {
         line-height: 2 !important;
+      }
+    }
+
+    .footer {
+      a {
+        font-size: 1rem;
+        width: 40px;
+        height: 40px;
       }
     }
   }
