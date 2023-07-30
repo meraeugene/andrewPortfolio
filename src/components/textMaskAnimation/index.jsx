@@ -51,8 +51,8 @@ export function MaskText() {
               initial="initial"
               animate={inView ? "enter" : ""}
             >
-              <span>▹</span>
-              {phrase}
+              <span>▹</span> 
+               {phrase}
             </motion.p>
           </div>
         );

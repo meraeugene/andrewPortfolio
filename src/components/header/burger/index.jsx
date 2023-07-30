@@ -37,7 +37,19 @@ export default function BurgerMenu({ openMenu }) {
           className={styles.button}
         >
           <div className={styles.background}></div>
+<<<<<<< HEAD
           <svg
+=======
+          <motion.svg
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: "easeInOut",
+              delay: 0.4,
+            }}
+            viewport={{ once: true }}
+>>>>>>> a2ca162eb85dc9a6bd8add81e49959b7ce61ee5f
             width="56"
             height="7"
             viewBox="0 0 56 7"
