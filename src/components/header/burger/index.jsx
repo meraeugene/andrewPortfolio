@@ -45,6 +45,7 @@ export default function BurgerMenu({ openMenu }) {
               ease: "easeInOut",
               delay: 0.4,
             }}
+            viewport={{ once: true }}
             width="56"
             height="7"
             viewBox="0 0 56 7"
