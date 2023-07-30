@@ -186,24 +186,14 @@
 
       &Info {
         &Text {
-          font-size: 0.9rem;
+          font-size: 0.8rem !important;
           letter-spacing: 0 !important;
         }
         &List {
           padding: 0 1.5em;
           &Item {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 380px) {
-    &Grid {
-      &Info {
-        &Text {
-          font-size: 0.9rem;
         }
       }
     }
