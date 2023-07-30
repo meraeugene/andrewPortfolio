@@ -6,8 +6,8 @@ import { useInView } from "react-intersection-observer";
 const fixedPart = "From Basic Landing Pages to ";
 
 const phrases = [
-  "From Figma into Fully Functional Website",
-  "Builds Responsive Website and Amazing UI Design",
+  "From Figma into Fully Functional Website.",
+  "Builds Responsive Website and Amazing UI Design.",
 ];
 
 export function MaskText() {

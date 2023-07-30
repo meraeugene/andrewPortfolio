@@ -17,7 +17,7 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
-  min-height: 100vh;
+  margin-bottom: 4em;
 }
 
 .scrollUp {
@@ -45,12 +45,6 @@
 }
 
 @media screen and (max-width: 428px) {
-  .container {
-    min-height: 100% !important;
-    margin-bottom: 3em;
-    height: 100% !important;
-  }
-
   .scrollUp {
     right: 25px !important;
     top: unset !important;

@@ -5,6 +5,7 @@ import styles from "./style.module.scss";
 import Button from "@/components/button";
 import React from "react";
 import { motion } from "framer-motion";
+import { ScrollLink } from "react-scroll";
 function Hero() {
   return (
     <div className={styles.hero}>

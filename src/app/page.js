@@ -30,7 +30,7 @@ export default function Index() {
         <div className={styles.container}>
           <MaskText />
         </div>
-        <Project id="project" />
+        <Project id="projects" />
         <About id="about" />
         <Contact id="contact" />
       </main>

@@ -1,6 +1,5 @@
 .project {
   height: 100%;
-  padding: 3em 0;
 
   &Title {
     position: relative;
@@ -12,18 +11,6 @@
       margin-right: 1.5rem;
       color: var(--theme-color);
     }
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .project {
-    padding-top: 0;
-  }
-}
-
-@media screen and (max-width: 855px) {
-  .project {
-    padding-bottom: 0;
   }
 }
 

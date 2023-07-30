@@ -13,7 +13,7 @@ import {
 
 const menu = [
   {
-    title: "Project",
+    title: "Projects",
     description: "To See Everything",
     images: ["projects1.png", "projects2.png", "projects3.png"],
   },

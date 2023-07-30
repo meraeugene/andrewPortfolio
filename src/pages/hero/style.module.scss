@@ -79,6 +79,8 @@
     &Text {
       font-size: 0.9rem;
       letter-spacing: 0;
+      margin-right: 0 !important;
+      width: 100% !important;
     }
   }
 }
@@ -87,16 +89,14 @@
   .hero {
     align-items: flex-start;
     &TitleLarge {
-      font-size: 1.8rem !important;
+      font-size: 1.5rem !important;
     }
     &TitleSub {
-      font-size: 1.5rem !important;
+      font-size: 1.8rem !important;
     }
     &Text {
       font-size: 0.9rem;
       letter-spacing: 0;
-      margin-right: 0 !important;
-      width: 100% !important;
     }
   }
 }
