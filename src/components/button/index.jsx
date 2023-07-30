@@ -16,7 +16,7 @@ function Button({ text }) {
   return (
     <button className={styles.btn} onClick={handleClick}>
       <span className="text">{text}</span>
-      <span>I'm worthy</span>
+      <span>I&apos;m worthy</span>
     </button>
   );
 }
