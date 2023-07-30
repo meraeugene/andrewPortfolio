@@ -37,9 +37,6 @@ export default function BurgerMenu({ openMenu }) {
           className={styles.button}
         >
           <div className={styles.background}></div>
-<<<<<<< HEAD
-          <svg
-=======
           <motion.svg
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,7 +46,6 @@ export default function BurgerMenu({ openMenu }) {
               delay: 0.4,
             }}
             viewport={{ once: true }}
->>>>>>> a2ca162eb85dc9a6bd8add81e49959b7ce61ee5f
             width="56"
             height="7"
             viewBox="0 0 56 7"
@@ -64,7 +60,7 @@ export default function BurgerMenu({ openMenu }) {
               stroke="white"
             />
             <line x1="56" y1="6.5" x2="28" y2="6.5" stroke="white" />
-          </svg>
+          </motion.svg>
           <motion.p
             initial={{ opacity: 0, y: 5 }}
             animate={{ opacity: 1, y: 0 }}
