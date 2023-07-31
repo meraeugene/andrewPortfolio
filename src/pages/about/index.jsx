@@ -26,7 +26,7 @@ function About() {
         <div className={styles.aboutGridInfo}>
           <h1>ABOUT</h1>
           <p className={styles.aboutGridInfoText}>
-            Hello! My name is <span>Andrew R. Villalon</span>, and I have 2
+            Hello! My name is <span>Andrew R. Villalon</span>, and I have almost 2
             years experience in Frontend Web Development. My interest in web
             development was sparked in 2022 when I created my first landing page
             website built using HTML and CSS.
