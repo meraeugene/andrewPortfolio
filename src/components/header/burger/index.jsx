@@ -10,9 +10,9 @@ export default function BurgerMenu({ openMenu }) {
   useEffect(() => {
     function handleScroll() {
       const currentScrollPos = window.scrollY;
-      // Hide the button if the screen width is less than or equal to 428px
+      // Hide the button if the screen width is less than or equal to 855px
       if (window.innerWidth <= 855) {
-        setIsButtonVisible(currentScrollPos === 0);
+        setIsButtonVisible(currentScrollPos < prevScrollPos);
       }
       // Update the previous scroll position
       setPrevScrollPos(currentScrollPos);
