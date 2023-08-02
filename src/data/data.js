@@ -18,7 +18,7 @@ export const projects = [
     description: "A fashion e-commerce landing page website.",
     technologies: ["Next.js", "Tailwind"],
     src: "elgevibes.png",
-    link: "https://url-shortening-andrew.vercel.app/",
+    link: "https://fashion-ecommerce-andrew.vercel.app/",
     year: 2023,
     source:
       "https://www.figma.com/file/U8WceqyYdAnVWImCriYaz6/Fashion-Ecommerce-Website-(Community)?type=design&node-id=0%3A1&mode=dev",
