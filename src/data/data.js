@@ -1,3 +1,5 @@
+// IMAGE SIZE: 1600w X 1200h
+
 export const projects = [
   {
     name: "Car Rent Website",
@@ -11,15 +13,15 @@ export const projects = [
       "https://www.figma.com/file/Y9yKgTrBuRKrR5x9rrb94j/Car-Rent-Website-Design---Pickolab-Studio-(Community)?type=design&node-id=1%3A6&mode=design&t=7lkJcFOiOoin7yq2-1",
   },
   {
-    name: "URL Shortener Website (Frontend-Mentor)",
+    name: "Elegant Vibes",
     client: "N/A",
-    description: "A fully functional URL shortener website.",
-    technologies: ["React", "API"],
-    src: "projects2.png",
+    description: "A fashion e-commerce landing page website.",
+    technologies: ["Next.js", "Tailwind"],
+    src: "elgevibes.png",
     link: "https://url-shortening-andrew.vercel.app/",
     year: 2023,
     source:
-      "https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G",
+      "https://www.figma.com/file/U8WceqyYdAnVWImCriYaz6/Fashion-Ecommerce-Website-(Community)?type=design&node-id=0%3A1&mode=dev",
   },
   {
     name: "Loopstudious Landing Page (Frontend-Mentor)",
@@ -65,5 +67,26 @@ export const projects = [
     year: 2023,
     source:
       "https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3",
+  },
+  {
+    name: "URL Shortener Website (Frontend-Mentor)",
+    client: "N/A",
+    description: "A fully functional URL shortener website.",
+    technologies: ["React", "API"],
+    src: "projects2.png",
+    link: "https://url-shortening-andrew.vercel.app/",
+    year: 2023,
+    source:
+      "https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G",
+  },
+  {
+    name: "Art Gallery ",
+    client: "N/A",
+    description: "A art gallery website.",
+    technologies: ["HTML", "CSS", "JS", "API"],
+    src: "contact2.png",
+    link: "https://art-gallery-arem.vercel.app/",
+    year: 2023,
+    source: "",
   },
 ];
