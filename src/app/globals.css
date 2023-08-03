@@ -103,3 +103,11 @@ html {
   margin: 0 0 24px;
   padding: 0;
 }
+
+body.menu-open {
+  overflow-y: hidden;
+}
+
+.purple {
+  color: var(--theme-color);
+}

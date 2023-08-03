@@ -9,20 +9,26 @@ import { AnimatePresence } from "framer-motion";
 export default function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
+  const openMenu = () => {
+    setMenuIsOpen(true);
+    document.body.classList.add("menu-open");
+  };
+
+  const closeMenu = () => {
+    setMenuIsOpen(false);
+    document.body.classList.remove("menu-open");
+  };
+
   return (
     <div>
       {!menuIsOpen && ( // Check if menuIsOpen is false (i.e., burger should be visible)
-        <Burger
-          openMenu={() => {
-            setMenuIsOpen(true);
-          }}
-        />
+        <Burger openMenu={openMenu} />
       )}
       <AnimatePresence mode="wait">
         {menuIsOpen && (
           <>
             <Stairs />
-            <Menu closeMenu={() => setMenuIsOpen(false)} />
+            <Menu closeMenu={closeMenu} />
           </>
         )}
       </AnimatePresence>

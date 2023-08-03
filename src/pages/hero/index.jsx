@@ -5,7 +5,6 @@ import styles from "./style.module.scss";
 import Button from "@/components/button";
 import React from "react";
 import { motion } from "framer-motion";
-import { ScrollLink } from "react-scroll";
 function Hero() {
   return (
     <div className={styles.hero}>
@@ -57,9 +56,11 @@ function Hero() {
         }}
       >
         Explore my professional front-end web developer portfolio, showcasing my
-        expertise in HTML, CSS, JavaScript, React, and TypeScript. With a focus
-        on visually stunning and user-friendly websites, I strive to deliver
-        seamless online experiences that impress both users and clients.
+        expertise in
+        <span className="purple"> HTML, CSS, JavaScript, React,</span> and
+        <span className="purple"> TypeScript</span>. With a focus on visually
+        stunning and user-friendly websites, I strive to deliver seamless online
+        experiences that impress both users and clients.
       </motion.p>
       <motion.div
         className={styles.heroButton}

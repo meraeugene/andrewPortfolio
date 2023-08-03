@@ -72,11 +72,14 @@
 
 @media screen and (max-width: 428px) {
   .button {
-    background-color: var(--theme-color) !important;
     height: 0px !important;
     padding: 25px;
     width: 100%;
     z-index: 10;
+    backdrop-filter: blur(14.3px);
+    -webkit-backdrop-filter: blur(14.3px);
+    background: rgba(0, 0, 0, 0.36) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
     svg {
       color: white !important;

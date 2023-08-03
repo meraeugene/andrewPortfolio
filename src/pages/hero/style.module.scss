@@ -77,10 +77,10 @@
       font-size: 2rem !important;
     }
     &TitleSub {
-      font-size: 1.7rem !important;
+      font-size: 1.8rem !important;
     }
     &Text {
-      font-size: 0.9rem !important;
+      font-size: 0.8rem !important;
       letter-spacing: 0;
       margin-right: 0 !important;
       width: 100% !important;
@@ -92,14 +92,21 @@
   .hero {
     align-items: flex-start;
     &TitleLarge {
-      font-size: 1.5rem !important;
+      font-size: 1.4rem !important;
     }
     &TitleSub {
-      font-size: 1.3rem !important;
+      font-size: 1.6rem !important;
     }
     &Text {
-      font-size: 0.9rem;
       letter-spacing: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    &TitleSub {
+      font-size: 1.3rem !important;
     }
   }
 }
