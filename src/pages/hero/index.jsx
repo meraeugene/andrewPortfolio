@@ -57,7 +57,10 @@ function Hero() {
       >
         Explore my professional front-end web developer portfolio, showcasing my
         expertise in
-        <span className="purple"> HTML, CSS, JavaScript, React,</span> and
+        <span className="purple"> HTML</span>,{" "}
+        <span className="purple">CSS</span>,{" "}
+        <span className="purple">JavaScript</span>,{" "}
+        <span className="purple">React,</span> and
         <span className="purple"> TypeScript</span>. With a focus on visually
         stunning and user-friendly websites, I strive to deliver seamless online
         experiences that impress both users and clients.

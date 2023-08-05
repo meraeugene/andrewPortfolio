@@ -11,6 +11,9 @@ export const metadata = {
   icons: {
     icon: "/images/icon.png",
   },
+  openGraph: {
+    images: "/og-image.png",
+  },
 };
 
 export default function RootLayout({ children }) {
