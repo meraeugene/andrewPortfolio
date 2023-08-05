@@ -15,13 +15,13 @@ export const metadata = {
     images:
       "https://raw.githubusercontent.com/meraeugene/andrewPortfolio/main/public/images/preview.png",
   },
-  images: [
-    {
-      url: "https://raw.githubusercontent.com/meraeugene/andrewPortfolio/main/public/images/preview.png",
-      width: 1607,
-      height: 907,
-    },
-  ],
+  // images: [
+  //   {
+  //     url: "https://raw.githubusercontent.com/meraeugene/andrewPortfolio/main/public/images/preview.png",
+  //     width: 1607,
+  //     height: 907,
+  //   },
+  // ],
 };
 
 export default function RootLayout({ children }) {
