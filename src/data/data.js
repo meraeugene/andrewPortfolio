@@ -2,15 +2,14 @@
 
 export const projects = [
   {
-    name: "Car Rent Website",
+    name: "GameVerse",
     client: "N/A",
-    description: "A fully functional car rental website.",
-    technologies: ["React", "TypeScript", "Formik"],
-    src: "projects1.png",
-    link: "https://car-rent-website-andrew.vercel.app/",
+    description: "Explore a gaming e-commerce site.      ",
+    technologies: ["React", "TypeScript", "TailwindCSS"],
+    src: "gameverse.png",
+    link: "https://gameverseph.vercel.app/",
     year: 2023,
-    source:
-      "https://www.figma.com/file/Y9yKgTrBuRKrR5x9rrb94j/Car-Rent-Website-Design---Pickolab-Studio-(Community)?type=design&node-id=1%3A6&mode=design&t=7lkJcFOiOoin7yq2-1",
+    source: "",
   },
   {
     name: "Film Faves",
@@ -22,6 +21,17 @@ export const projects = [
     link: "https://filmfaves.vercel.app/",
     year: 2023,
     source: "",
+  },
+  {
+    name: "Car Rent Website",
+    client: "N/A",
+    description: "A fully functional car rental website.",
+    technologies: ["React", "TypeScript", "Formik"],
+    src: "projects1.png",
+    link: "https://car-rent-website-andrew.vercel.app/",
+    year: 2023,
+    source:
+      "https://www.figma.com/file/Y9yKgTrBuRKrR5x9rrb94j/Car-Rent-Website-Design---Pickolab-Studio-(Community)?type=design&node-id=1%3A6&mode=design&t=7lkJcFOiOoin7yq2-1",
   },
   {
     name: "Elegant Vibes",
