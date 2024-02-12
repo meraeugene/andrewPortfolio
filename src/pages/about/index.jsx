@@ -26,8 +26,8 @@ function About() {
         <div className={styles.aboutGridInfo}>
           <h1>ABOUT</h1>
           <p className={styles.aboutGridInfoText}>
-            Hello! My name is <span>Andrew R. Villalon</span>, and I have almost 2
-            years experience in Frontend Web Development. My interest in web
+            Hello! My name is <span>Andrew R. Villalon</span>, and I have almost
+            2 years experience in FullStack Web Development. My interest in web
             development was sparked in 2022 when I created my first landing page
             website built using HTML and CSS.
           </p>
@@ -38,7 +38,10 @@ function About() {
           <ul className={styles.aboutGridInfoList}>
             <li className={styles.aboutGridInfoListItem}>Next.js</li>
             <li className={styles.aboutGridInfoListItem}>React</li>
-            <li className={styles.aboutGridInfoListItem}>Javascript (ES6+)</li>
+            <li className={styles.aboutGridInfoListItem}>Express</li>
+            <li className={styles.aboutGridInfoListItem}>Mongoose</li>
+            <li className={styles.aboutGridInfoListItem}>Nodejs</li>
+            <li className={styles.aboutGridInfoListItem}>Javascript</li>
             <li className={styles.aboutGridInfoListItem}>Typescript</li>
             <li className={styles.aboutGridInfoListItem}>Tailwind</li>
           </ul>

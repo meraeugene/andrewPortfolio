@@ -43,7 +43,7 @@ function Hero() {
           delay: 1.05,
         }}
       >
-        Front-End React Developer
+        Full Stack MERN Developer
       </motion.h3>
       <motion.p
         className={styles.heroText}
@@ -57,10 +57,10 @@ function Hero() {
       >
         Explore my professional front-end web developer portfolio, showcasing my
         expertise in
-        <span className="purple"> HTML</span>,{" "}
-        <span className="purple">CSS</span>,{" "}
-        <span className="purple">JavaScript</span>,{" "}
-        <span className="purple">React,</span> and
+        <span className="purple"> Mongoose</span>,{" "}
+        <span className="purple">Express</span>,{" "}
+        <span className="purple">React</span>,{" "}
+        <span className="purple">Node</span> and
         <span className="purple"> TypeScript</span>. With a focus on visually
         stunning and user-friendly websites, I strive to deliver seamless online
         experiences that impress both users and clients.

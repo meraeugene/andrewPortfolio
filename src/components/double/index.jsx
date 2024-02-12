@@ -84,8 +84,10 @@ export default function Double({ projects, reversed }) {
           >
             <Image
               src={`/images/${projects[0].src}`}
+              blurDataURL={projects[0].blurDataURL}
               fill={true}
               alt={"image"}
+              placeholder="blur"
             />
           </Link>
         </div>
@@ -121,6 +123,8 @@ export default function Double({ projects, reversed }) {
               src={`/images/${projects[1].src}`}
               fill={true}
               alt={"image"}
+              blurDataURL={projects[1].blurDataURL}
+              placeholder="blur"
             />
           </Link>
         </div>
