@@ -4,7 +4,6 @@ import ScrollToTop from "react-scroll-to-top";
 import styles from "./style.module.scss";
 import SocialIcons from "@/components/socialicons";
 import Email from "@/components/email";
-import { MaskText } from "@/components/textMaskAnimation";
 import Hero from "@/pages/hero";
 import Project from "@/pages/projects";
 import About from "@/pages/about";
@@ -27,9 +26,7 @@ export default function Index() {
       <Email />
       <main className={styles.main}>
         <Hero />
-        <div className={styles.container}>
-          <MaskText />
-        </div>
+
         <Project id="projects" />
         <About id="about" />
         <Contact id="contact" />

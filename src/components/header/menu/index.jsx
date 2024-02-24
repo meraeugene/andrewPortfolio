@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { opacity, slideLeft, mountAnim } from "../anim";
 import styles from "./style.module.scss";
 import Link from "./link";
 
@@ -31,17 +29,9 @@ const menu = [
 
 function Menu({ closeMenu }) {
   return (
-    <motion.div
-      className={styles.menu}
-      variants={opacity}
-      initial="initial"
-      animate="enter"
-      exit="exit"
-    >
+    <div className={styles.menu}>
       <div className={styles.header}>
-        <motion.svg
-          variants={slideLeft}
-          {...mountAnim}
+        <svg
           onClick={() => {
             closeMenu();
           }}
@@ -53,7 +43,7 @@ function Menu({ closeMenu }) {
         >
           <path d="M1.5 1.5L67 67" stroke="white" />
           <path d="M66.5 1L0.999997 66.5" stroke="white" />
-        </motion.svg>
+        </svg>
       </div>
 
       <div className={styles.body}>
@@ -64,12 +54,7 @@ function Menu({ closeMenu }) {
         })}
       </div>
 
-      <motion.div
-        variants={opacity}
-        {...mountAnim}
-        custom={0.5}
-        className={styles.footer}
-      >
+      <div className={styles.footer}>
         <a href="https://www.facebook.com/villalonandrew">
           <FiFacebook />
         </a>
@@ -82,8 +67,8 @@ function Menu({ closeMenu }) {
         <a href="https://www.linkedin.com/in/username/">
           <FiLinkedin />
         </a>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
 

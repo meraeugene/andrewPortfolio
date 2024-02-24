@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "./style.module.scss";
-import { motion } from "framer-motion";
 
 export default function BurgerMenu({ openMenu }) {
   const [isButtonVisible, setIsButtonVisible] = useState(true);
@@ -53,17 +52,7 @@ export default function BurgerMenu({ openMenu }) {
             />
             <line x1="56" y1="6.5" x2="28" y2="6.5" stroke="white" />
           </svg>
-          <motion.p
-            initial={{ opacity: 0, y: 5 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.3,
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
-          >
-            Menu
-          </motion.p>
+          <p>Menu</p>
         </div>
       )}
     </>

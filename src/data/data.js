@@ -5,7 +5,7 @@ export const projects = [
     name: "Tim Hortons Clone",
     client: "N/A",
     description: "CoffeeShop Platform built with the MERN stack & Redux.",
-    technologies: ["MERN", "Cloduinary", "TailwindCSS", "Firebase Google Auth"],
+    technologies: ["MERN", "Cloudinary", "TailwindCSS", "Firebase Google Auth"],
     src: "timhortons.png",
     link: "https://tim-hortons-clone.onrender.com/",
     year: 2024,

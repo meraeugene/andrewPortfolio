@@ -41,16 +41,7 @@ function SocialIcons() {
     },
   ];
   return (
-    <motion.div
-      className={styles.socialIcons}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{
-        duration: 0.3,
-        ease: "easeInOut",
-        delay: 1.95,
-      }}
-    >
+    <div className={styles.socialIcons}>
       <ul className={styles.socialIconsList}>
         {socialLinks.map(({ name, icon, link }) => (
           <li key={name} title={name} className={styles.socialIconsListItem}>
@@ -64,7 +55,7 @@ function SocialIcons() {
           </li>
         ))}
       </ul>
-    </motion.div>
+    </div>
   );
 }
 
